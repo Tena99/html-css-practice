@@ -1,0 +1,45 @@
+body {
+  padding: 5px;
+}
+
+h1,
+h2,
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+header nav ul li {
+  padding: 5px;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #31b7ff;
+}
+
+.profile_img {
+  height: 200px;
+  border-radius: 50%;
+}
+
+table {
+  border-collapse: collapse;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+table tr td,
+table tr th {
+  padding: 10px;
+  border: 1px solid black;
+  table-layout: auto;
+}
