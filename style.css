@@ -1,5 +1,6 @@
 body {
   padding: 5px;
+  background: #e0e0e0;
 }
 
 h1,
@@ -8,14 +9,22 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+header nav {
+  background: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
 header nav ul {
   list-style: none;
   display: flex;
   padding: 0;
+  margin: 0;
 }
 
 header nav ul li {
   padding: 5px;
+  margin: 0 10px;
 }
 
 header nav ul li a {
@@ -27,19 +36,104 @@ header nav ul li a:hover {
   color: #31b7ff;
 }
 
+.title {
+  margin: 20px 15px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid white;
+  margin: 10px 0;
+}
+
 .profile_img {
+  padding: 10px;
+  border: 1px solid white;
+  position: relative;
+}
+
+.profile_img img {
   height: 200px;
   border-radius: 50%;
 }
 
-table {
-  border-collapse: collapse;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+.emoji {
+  position: absolute;
+  display: flex;
+  background: white;
+  border-radius: 25px;
+  align-items: center;
+  padding: 0px 5px;
+  bottom: 15px;
+  right: 15px;
 }
 
-table tr td,
-table tr th {
+.emoji img {
+  height: 25px;
+  width: 25px;
+}
+
+.emoji p {
+  padding: 10px 5px;
+  margin: 0;
+}
+
+.profile_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 80%;
+  padding: 15px;
+}
+
+.profile_info_title {
   padding: 10px;
+  margin: 0;
+}
+
+.profile_info_data {
+  padding: 10px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  padding: 5px;
+  margin: 0px 5px;
+  background: white;
   border: 1px solid black;
-  table-layout: auto;
+  border-radius: 10px;
+  width: 25%;
+  position: relative;
+}
+
+.card_title,
+.card_date {
+  margin: 0;
+}
+
+.card_date {
+  color: grey;
+  font-size: 14px;
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  right: 5px;
+  background: #ee4a00;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.badge h4 {
+  margin: 0;
+  font-weight: 500;
 }
