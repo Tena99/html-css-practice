@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   padding: 5px;
   background: #e0e0e0;
@@ -50,7 +56,6 @@ header nav ul li a:hover {
 
 .profile_img {
   padding: 10px;
-  border: 1px solid white;
   position: relative;
 }
 
@@ -87,6 +92,7 @@ header nav ul li a:hover {
   height: 100%;
   width: 80%;
   padding: 15px;
+  border-left: 1px solid white;
 }
 
 .profile_info_title {
@@ -102,16 +108,22 @@ header nav ul li a:hover {
 .container {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .card {
-  padding: 5px;
-  margin: 0px 5px;
+  padding: 15px;
+  margin: 0px 10px;
   background: white;
   border: 1px solid black;
   border-radius: 10px;
   width: 25%;
   position: relative;
+  min-width: 245px;
+}
+
+.card div:first-of-type {
+  margin-bottom: 10px;
 }
 
 .card_title,
@@ -122,6 +134,18 @@ header nav ul li a:hover {
 .card_date {
   color: grey;
   font-size: 14px;
+}
+
+.card_description p {
+  margin-bottom: 5px;
+}
+
+.card_description ul {
+  padding: 0 0 0 15px;
+}
+
+.card_description ul li {
+  padding: 5px;
 }
 
 .badge {
@@ -136,4 +160,46 @@ header nav ul li a:hover {
 .badge h4 {
   margin: 0;
   font-weight: 500;
+}
+
+.input_container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.form_container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+form {
+  width: 35%;
+}
+
+.input_container input {
+  border-radius: 20px;
+  border: 1px solid grey;
+  height: 35px;
+  padding: 5px 10px;
+}
+
+.input_container textarea {
+  resize: none;
+  height: 160px;
+  padding: 15px;
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+
+.img_container {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.img_container img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }

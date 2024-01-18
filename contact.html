@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
     <header>
@@ -18,11 +19,33 @@
     </header>
 
     <main>
-      <article>
-        <h2>Contacts</h2>
-        <p>Email: stacyvolvis@gmail.com</p>
-        <p>Whatsapp: +49 175 883 41 81</p>
-      </article>
+      <div class="form_container">
+        <form action="#">
+          <div class="input_container">
+            <label for="form_name">Name</label>
+            <input type="text" id="form_name" name="user_name" />
+          </div>
+
+          <div class="input_container">
+            <label for="form_email">Email</label>
+            <input type="email" id="form_email" name="user_email" />
+          </div>
+
+          <div class="input_container">
+            <label for="form_phone">Phone</label>
+            <input type="text" id="form_phone" name="user_phone" />
+          </div>
+
+          <div class="input_container">
+            <label for="form_message">Message</label>
+            <textarea id="form_message" name="user_message"></textarea>
+          </div>
+        </form>
+
+        <div class="img_container">
+          <img src="./assets/contact.webp" alt="contact_img" />
+        </div>
+      </div>
     </main>
   </body>
 </html>
