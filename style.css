@@ -2,11 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #dbdbdb;
 }
 
 body {
   padding: 5px;
-  background: #e0e0e0;
+  background: #1f1e1e;
 }
 
 h1,
@@ -19,6 +20,7 @@ header nav {
   background: white;
   border-radius: 5px;
   padding: 10px;
+  margin: 20px;
 }
 
 header nav ul {
@@ -50,8 +52,7 @@ header nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid white;
-  margin: 10px 0;
+  margin: 20px;
 }
 
 .profile_img {
@@ -83,6 +84,7 @@ header nav ul li a:hover {
 .emoji p {
   padding: 10px 5px;
   margin: 0;
+  color: black;
 }
 
 .profile_info {
@@ -202,4 +204,62 @@ form {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.banner {
+  display: flex;
+  padding: 20px;
+  margin: auto;
+  background: url("./assets/background.jpg");
+  background-size: cover;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.banner_text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner h3 {
+  font-size: 42px;
+  padding: 15px;
+  margin-right: 20px;
+}
+
+.banner .img_container {
+  width: 60%;
+}
+
+.portfolio_container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background: #9e9fa2;
+  margin: 20px;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.portfolio_container .img_container {
+  width: 70%;
+}
+
+.portfolio_text {
+  font-size: 42px;
+}
+
+.portfolio_text p {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.portfolio_text a {
+  text-decoration: none;
+}
+
+.card * {
+  color: black;
 }
